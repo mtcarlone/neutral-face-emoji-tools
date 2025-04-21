@@ -1,7 +1,6 @@
-import _ from 'lodash';
 import axios from 'axios';
 import { ConcurrencyManager } from 'axios-concurrency';
-import uuid from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 import getSlackApiData from './get-slack-api-data';
 
@@ -17,9 +16,9 @@ const NO_OP = function () {};
 
 export default function uploadEmoji (file, callback = NO_OP) {
   const { apiToken, versionUid } = getSlackApiData();
-  const timestamp = Date.now() / 1000;  
+  const timestamp = Date.now() / 1000;
   const version = versionUid ? versionUid.substring(0, 8) : 'noversion';
-  const id = uuid.v4();
+  const id = uuidv4();
   const name = file.name.split('.')[0].toLowerCase();
 
   const formData = new FormData();
@@ -40,7 +39,7 @@ export default function uploadEmoji (file, callback = NO_OP) {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
   }).then((response) => {
-    const error = _.get(response, 'data.error');
+    const error = response?.data?.error;
     callback(error, response);
   }).catch((error) => {
     callback(error, null);
