@@ -4,13 +4,13 @@ Drag and drop all your emoji.
 
 ![Demo GIF](demo.gif)
 
+This extension is a fork from [neutral-face-emoji-tools](https://github.com/Fauntleroy/neutral-face-emoji-tools) by [Timothy Kempf](https://github.com/Fauntleroy).
+
 -----
 
 ### Installation
 
-This extension is available for:
-- Google Chrome: https://chrome.google.com/webstore/detail/slack-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej
-- Mozilla Firefox: https://addons.mozilla.org/en-US/firefox/addon/neutral-face-emoji-tools/
+This extension is not publicly available at this time.
 
 -----
 
