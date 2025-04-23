@@ -1,8 +1,8 @@
 {
-    "name": "neutral-face-emoji-tools",
+    "name": "neutral-face-emoji-tools-updated",
     "version": "3.3.0",
     "type": "module",
-    "description": "Tools that make life as a Slack emoji addict a little easier.",
+    "description": "Tools that make life as a Slack emoji addict a little easier. A maintained fork of the original neutral-face-emoji-tools.",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
