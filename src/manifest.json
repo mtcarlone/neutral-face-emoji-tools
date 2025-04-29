@@ -1,7 +1,7 @@
 {
-  "name": "Neutral Face Emoji Tools",
+  "name": "Neutral Face Emoji Tools (Updated)",
   "short_name": "Emoji Tools",
-  "description": "Tools that make life as a Slack emoji addict a little easier.",
+  "description": "Tools that make life as a Slack emoji addict a little easier. A maintained fork of the original Neutral Face Emoji Tools.",
   "version": "3.3.0",
   "permissions": [],
   "content_scripts": [{
